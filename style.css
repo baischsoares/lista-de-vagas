@@ -1,0 +1,127 @@
+::root {
+  --cor1: hsl(180, 29%, 50%);
+  --corBG: hsl(180, 52%, 96%);
+  --corFilter: hsl(180, 31%, 95%);
+  --cor2: hsl(180, 8%, 52%);
+  --cor3: hsl(180, 14%, 20%); 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'League Spartan';
+}
+body{
+  background-color: #EFFAFA;
+  background-image: url('./images/bg-header-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+ul{
+  list-style: none;
+  font-family: 'League Spartan';
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+button{
+  border: none;
+  color: hsl(180, 29%, 50%);
+  background-color:  hsl(180, 52%, 96%);;
+  font-weight: 700;
+  padding: 8px;
+  border-radius: 5px;
+}
+button:hover{
+  cursor: pointer;
+  background-color:hsl(180, 29%, 50%);
+  color: white;
+  border-radius: 5px;
+}
+
+span{
+  font-family: 'League Spartan';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--cor3);
+}
+.modelos{
+  display: none;
+}
+.section-main{
+  margin-top: 200px;
+}
+
+.cardJob-model{
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 32px 40px ;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0 4px 25px rgba(0,0,0,.25);
+}
+.tags{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.main{
+  display: flex;
+  gap:22px;
+  align-items: center;
+}
+.infos {
+  display: grid;
+  gap: 12px;
+}
+.company{
+  font-size: 14px;
+  font-weight: bold;
+  color: #5CA5A5; ;
+}
+.new, .featured{
+  text-transform: uppercase;
+  padding: 6px 8px 4px 8px;
+  display: inline-block;
+  border-radius: 15px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+.new{
+  background-color: #5CA5A5;
+}
+.featured{
+  background-color: #2B3939;
+}
+h1{
+  color:  #5CA5A5;
+  cursor: pointer;
+}
+.details li{
+  color: #7C8F8F;
+  position: relative;
+}
+
+.details li + li::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #7C8F8F;
+  top: 4px;
+  left: -12px;
+  border-radius: 50%;
+}
