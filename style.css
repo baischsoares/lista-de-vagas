@@ -125,3 +125,49 @@ h1{
   left: -12px;
   border-radius: 50%;
 }
+
+.inputsBusca{
+  display: flex;
+  max-width: 1110px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-bottom:50px;
+}
+
+.inputsBusca div{
+  display: flex;
+  align-items: center;
+}
+
+label{
+  display: block;
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+select, option{
+  font-weight: 500;
+  font-size: 18px;
+  padding: 15px 12px;
+}
+select{
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 4px 25px rgba(0,0,0,.25);
+
+}
+
+button[data-pesqisar]{
+  background-color: #5CA5A5;
+  color: white;
+  font-size: 18px;
+}
+button[data-pesqisar]:hover{
+  background-color: transparent;
+  border: 1px solid  #5CA5A5;
+  color: #5CA5A5;
+  font-size: 18px;
+}
