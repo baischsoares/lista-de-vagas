@@ -43,21 +43,27 @@
     </div>
   </div>
 
-  <section class="section-main">
+ 
     <div class="inputsBusca">
       <div>
         <label for="position">Posição</label>
-        <select value="position" data-search-position></select>
+        <select value="position" data-search-position>
+          <option value="null">Selecione a posição</option>
+        </select>
       </div>
       <div>
         <label for="level">Nível</label>
-        <select value="level" data-search-level></select>
+        <select value="level" data-search-level>
+          <option value="null">Selecione o nível</option>
+        </select>
       </div>
       <div>
         <button data-pesqisar>Pesquisar</button>
       </div>
     </div>
-  </section>
+    
+    <section class="section-main">
+    </section>
 
 
   <script type="module" src="script.js"></script>

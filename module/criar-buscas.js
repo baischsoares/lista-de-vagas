@@ -1,7 +1,6 @@
 export default function initCriarBuscas() {
   const searchPosition = document.querySelector('[data-search-position]');
   const searchLevel = document.querySelector('[data-search-level]');
-  const vagasPosition = []
 
 
   async function iniciarAsync(){
@@ -19,11 +18,9 @@ export default function initCriarBuscas() {
   }
 
   function buscaPosition(vaga){
-
     const opcao = document.createElement('option');
     opcao.setAttribute('name', vaga.position)
     opcao.innerText = vaga.position
-    vagasPosition.push(opcao)
     searchPosition.append(opcao)
     
   }
