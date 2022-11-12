@@ -11,11 +11,16 @@ export default function initFuncaoBusca() {
     secaoVagas.innerHTML = ''
 
     vagas.forEach((item) =>{
-      const itemPositionBol = item.position == inputPosition.value
-      const itemLevelBol = item.level == inputLevel.value 
-      if(itemPositionBol || itemLevelBol){
+
+      if(inputPosition.value == 'null' && inputLevel.value == 'null'){
         criarCard(item)
-      } 
+      } else {
+        const itemPositionBol = item.position == inputPosition.value
+        const itemLevelBol = item.level == inputLevel.value 
+          if(itemPositionBol || itemLevelBol){
+          criarCard(item)
+        } 
+      }
     })
   })
 }
