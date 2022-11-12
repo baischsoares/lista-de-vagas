@@ -54,6 +54,5 @@ export function criarCard(vaga){
     cardJob.querySelector('.tags').appendChild(featured)
   }
 
-
    document.querySelector('.section-main').appendChild(cardJob)
 }

@@ -2,7 +2,6 @@ export default function initCriarBuscas() {
   const searchPosition = document.querySelector('[data-search-position]');
   const searchLevel = document.querySelector('[data-search-level]');
 
-
   async function iniciarAsync(){
     const dadosResponse = await fetch('./data.json');
     const dadosJSON = await dadosResponse.json();
